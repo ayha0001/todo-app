@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do app</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>To do app</h1>
+      <p><span id="taskCount">0</span> tasks · <span id="doneCount">0</span> done</p>
+    </header>
+
+    <main>
+      <section class="add-form">
+        <h2>New task</h2>
+        <input type="text" id="taskInput" placeholder="Enter a new task" required />
+        <input type="date" id="dueDate" required />
+        <button id="addTask">Add Task</button>
+      </section>
+
+      <section class="task-lists">
+        <div class="task-container">
+          <h3>To do:</h3>
+          <ul id="taskList"></ul>
+        </div>
+        <div class="task-container">
+          <h3>Done:</h3>
+          <ul id="doneList"></ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

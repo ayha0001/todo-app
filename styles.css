@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/**/
+
+header {
+  background-color: #504933;
+  padding: 40px 40px 30px;
+}
+
+body {
+  background-color: #a59f89;
+}
+
+h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: inter, sans-serif;
+  font-size: 50px;
+  color: #fadd7d;
+}
+
+header p {
+  font-family: inter, sans-serif;
+  color: white;
+}
+
+#taskInput {
+  padding: 7px 10px;
+}
+
+#dueDate {
+  padding: 6px 10px;
+}
+
+#addTask {
+  padding: 7px 10px;
+}
+
+.add-form {
+  padding: 25px 40px 7px;
+}
+
+.add-form h2 {
+  margin-bottom: 8px;
+  font-family: inter, sans-serif;
+  font-size: 30px;
+}
+
+.task-lists {
+  padding: 40px 40px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-family: inter, sans-serif;
+  font-size: 22px;
+}
+
+.task-container {
+  background-color: #fae495;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+/* Ul i todo og done */
+ul {
+  list-style-position: inside; /* gør at prikken rykker ind */
+  list-style-type: circle;
+}
+
+li {
+  border-bottom: #a59c85 1px solid;
+  padding: 7px 0;
+}
+
+.task-row {
+  display: grid;
+  grid-template-columns: 3fr 1fr auto; /* navn | dato | knapper */
+  align-items: center; /* centrerer vertikalt */
+  gap: 10px;
+  border-bottom: 1px solid #aaa;
+  font-family: inter, sans-serif;
+}
+
+.task-date {
+  text-align: center;
+
+}
+.task-buttons {
+  text-align: right;
+}
+
+.task-buttons button {
+  margin-left: 2px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #504933;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /
+}
+
+.task-buttons button:hover {
+  background-color: #3e3526;
+}
+
+
+@media (max-width: 800px) {
+  .task-lists {
+    grid-template-columns: 1fr; /* ændrer til en kolonne på små skærme */
+  }
+
+  .task-row{
+    font-size: 14px;
+  }
+}
